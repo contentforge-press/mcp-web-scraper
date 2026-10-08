@@ -1,0 +1,17 @@
+{
+  "name": "mcp-web-scraper",
+  "version": "1.0.0",
+  "description": "Production-ready MCP server template: JSON-RPC over HTTP, zero-dependency. Ship a working MCP server in 5 minutes.",
+  "main": "worker.js",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "template",
+    "server",
+    "ai",
+    "agent"
+  ],
+  "license": "SEE LICENSE IN README.md",
+  "author": "PixHarvest (ContentForge)"
+}
