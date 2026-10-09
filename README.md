@@ -1,25 +1,48 @@
-# MCP Server Web Scraper Kit (TypeScript)
+# Web Scraper Pro - MCP Server
 
-**Production-ready MCP server template: JSON-RPC over HTTP, zero-dependency. Ship a working MCP server in 5 minutes.**
+让AI能抓取任何网站的内容、链接、元数据和邮箱。
 
-> 由 AI 代码公司（PixHarvest）公司大脑按数据信号自动生成 · 模板/boilerplate × 生态市场 × 按量计费
+## 功能
 
-## 快速开始
-```bash
-npx wrangler deploy worker.js --name mcp-web-scraper
-```
-然后在 Claude / Cursor / 任意 MCP 客户端添加：
-```
-https://mcp-web-scraper.contentforge-press.workers.dev/mcp
-```
+1. **scrape_website** - 抓取网站完整内容
+2. **extract_links** - 提取网站所有链接
+3. **extract_metadata** - 提取元数据（标题、描述、图片）
+4. **scrape_multiple_pages** - 批量抓取多个页面
+5. **find_emails_on_page** - 在网站上找邮箱
 
-## 授权与订阅
-本模板为**订阅授权**：$39/月，含免费额度；超额按量付费。
-- 订阅入口: https://pixharvest.com/pricing
-- 生态市场: npm (`mcp-web-scraper`) · GitHub · MCP 生态
+## 如何发布到Mize
 
-## 工具
-echo, now, gen_uuid
+### 第一步：注册Mize账号
+1. 打开 https://mcpize.com/
+2. 点击 Sign Up
+3. 用GitHub账号登录（推荐）
 
-## 配套
-完整商业化（Dodo 自动订阅校验 + 用量计费 402）见 mcp-server-billing-kit。
+### 第二步：连接GitHub
+1. 在Mize后台，点击 "Add New Server"
+2. 连接你的GitHub账号
+3. 选择这个仓库
+
+### 第三步：设置价格
+- 免费额度：每月25,000次请求
+- 付费订阅：建议$9/月或$19/月
+- 你拿80%收入
+
+### 第四步：发布
+1. 点击 "Deploy"
+2. 30秒自动部署
+3. 上线！
+
+## 定价建议
+
+| 方案 | 价格 | 包含 |
+|------|------|------|
+| Free | $0 | 100次/月 |
+| Pro | $9/月 | 10,000次/月 |
+| Business | $29/月 | 100,000次/月 |
+
+## 技术栈
+
+- Python 3.10+
+- FastMCP
+- httpx
+- BeautifulSoup4
